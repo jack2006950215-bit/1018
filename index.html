@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f7f4"><title>日常計畫｜把今天過得剛剛好</title>
+<style>
+:root{--ink:#20332e;--muted:#82908a;--green:#28614e;--mint:#e7f1e9;--line:#e9ece7;--paper:#fff;--canvas:#f6f7f4;--amber:#fbf1dc;--blue:#edf2fb;--shadow:0 12px 34px #24352c0a}*{box-sizing:border-box}body{margin:0;background:var(--canvas);color:var(--ink);font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans TC",sans-serif;font-size:15px;line-height:1.6}button,input,textarea{font:inherit}button{cursor:pointer}.app{max-width:1120px;margin:auto;padding:34px 28px 54px}.topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:42px}.brand{display:flex;align-items:center;gap:11px;font-weight:750;font-size:17px}.brand-mark{display:grid;place-items:center;width:35px;height:35px;border-radius:12px;background:var(--green);color:white}.top-note{font-size:13px;color:var(--muted)}.hero{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:30px}.eyebrow{color:var(--green);font-size:12px;font-weight:750;letter-spacing:.13em}.hero h1{margin:6px 0 2px;font-size:clamp(30px,5vw,42px);line-height:1.25;letter-spacing:-.04em}.hero p{margin:8px 0 0;color:var(--muted)}.date-card{min-width:150px;padding:13px 17px;border:1px solid var(--line);border-radius:15px;background:var(--paper);text-align:right;box-shadow:var(--shadow)}.date-label{display:block;color:var(--muted);font-size:11px}.date-value{font-size:15px;font-weight:700}.layout{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(285px,.85fr);gap:21px;align-items:start}.main-column,.side-column{display:grid;gap:21px}.card{padding:23px 24px;border:1px solid #eaede8;border-radius:19px;background:var(--paper);box-shadow:var(--shadow)}.section-heading{display:flex;align-items:center;justify-content:space-between;margin-bottom:19px}.section-title{display:flex;align-items:center;gap:9px;margin:0;font-size:17px;font-weight:750}.heading-icon{display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:#f0f4ef}.count{color:var(--muted);font-size:12px}.schedule-list{position:relative;display:grid}.schedule-list:before{position:absolute;top:17px;bottom:20px;left:63px;width:1px;background:var(--line);content:""}.event{position:relative;display:grid;grid-template-columns:48px 14px 1fr;gap:12px;padding-bottom:20px}.event:last-child{padding-bottom:0}.event-time{color:#687770;font-size:13px;font-weight:650}.event-dot{z-index:1;width:10px;height:10px;margin-top:7px;border:2px solid var(--green);border-radius:50%;background:white}.event-name{font-size:14px;font-weight:700}.event-detail{margin-top:3px;color:var(--muted);font-size:12px}.event-tag{display:inline-flex;margin-top:7px;padding:2px 8px;border-radius:20px;background:var(--mint);color:var(--green);font-size:10px}.event-tag.amber{background:var(--amber);color:#996a1a}.event-tag.blue{background:var(--blue);color:#536c9b}.todo-list{display:grid;gap:2px}.todo-item{display:flex;align-items:center;gap:12px;padding:12px 1px;border-bottom:1px solid #f0f1ee}.todo-item:last-child{border:0}.todo-check{appearance:none;width:19px;height:19px;flex:0 0 19px;margin:0;border:1.5px solid #cbd4cd;border-radius:6px;background:white;cursor:pointer}.todo-check:checked{border-color:var(--green);background:var(--green)}.todo-check:checked:after{display:block;color:white;content:"✓";font-size:13px;line-height:17px;text-align:center}.todo-label{flex:1;font-size:13px;font-weight:550}.todo-item.done .todo-label{color:#9aa59f;text-decoration:line-through}.status{padding:4px 8px;border-radius:20px;background:#f0f2ef;color:#69756e;font-size:10px;white-space:nowrap}.status.in-progress{background:var(--mint);color:var(--green)}.status.pending{background:var(--amber);color:#966918}.form-card{background:#fbfcfa}.form-intro{margin:-11px 0 18px 40px;color:var(--muted);font-size:12px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:11px;font-weight:700;color:#59675f}.field input,.field textarea{width:100%;padding:10px 11px;border:1px solid #e5e9e3;border-radius:10px;outline:none;background:white;color:var(--ink);font-size:12px}.field input:focus,.field textarea:focus{border-color:#8cac99;box-shadow:0 0 0 3px #28614e12}.field textarea{min-height:66px;resize:vertical}.submit-button{width:100%;margin-top:15px;padding:10px 14px;border:0;border-radius:11px;background:var(--green);color:white;font-size:13px;font-weight:700}.submit-button:hover{background:#204f40}.footer{padding-top:25px;color:#99a29d;font-size:11px;text-align:center}@media(max-width:760px){.app{padding:23px 18px 38px}.topbar{margin-bottom:34px}.layout{grid-template-columns:1fr}.side-column{grid-template-columns:1fr 1fr;align-items:start}.form-card{grid-column:1/-1}.hero{align-items:flex-start}.date-card{min-width:130px;padding:10px 12px}}@media(max-width:520px){.app{padding:19px 14px 32px}.top-note{display:none}.hero{display:block}.date-card{display:inline-block;margin-top:17px;text-align:left}.side-column{grid-template-columns:1fr}.form-card{grid-column:auto}.card{padding:20px 18px}.schedule-list:before{left:59px}.event{grid-template-columns:45px 14px 1fr;gap:10px}}
+</style>
+</head>
+<body>
+<main class="app">
+<header class="topbar"><div class="brand"><span class="brand-mark" aria-hidden="true">✳</span><span>日常計畫</span></div><span class="top-note">留一點空間，給重要的事</span></header>
+<section class="hero" aria-labelledby="page-title"><div><div class="eyebrow">YOUR DAY, YOUR PACE</div><h1 id="page-title">把今天過得剛剛好。</h1><p>整理一下今天的節奏，一步一步來就好。</p></div><div class="date-card"><span class="date-label">今天是</span><time class="date-value" id="today-date"></time></div></section>
+<div class="layout"><div class="main-column">
+<section class="card" aria-labelledby="schedule-heading"><div class="section-heading"><h2 class="section-title" id="schedule-heading"><span class="heading-icon" aria-hidden="true">◷</span>今日行程</h2><span class="count" id="event-count">3 個安排</span></div><div class="schedule-list" id="schedule-list">
+<article class="event"><time class="event-time" datetime="09:30">09:30</time><span class="event-dot" aria-hidden="true"></span><div><div class="event-name">晨間例會</div><div class="event-detail">和團隊對齊本週的優先事項</div><span class="event-tag">工作</span></div></article>
+<article class="event"><time class="event-time" datetime="12:00">12:00</time><span class="event-dot" aria-hidden="true"></span><div><div class="event-name">午餐・巷口小食堂</div><div class="event-detail">好久不見，和朋友吃頓飯</div><span class="event-tag amber">生活</span></div></article>
+<article class="event"><time class="event-time" datetime="15:30">15:30</time><span class="event-dot" aria-hidden="true"></span><div><div class="event-name">專注時光</div><div class="event-detail">留一段不被打擾的創作時間</div><span class="event-tag blue">個人</span></div></article>
+</div></section>
+<section class="card" aria-labelledby="todo-heading"><div class="section-heading"><h2 class="section-title" id="todo-heading"><span class="heading-icon" aria-hidden="true">✓</span>待辦清單</h2><span class="count" id="todo-count">1 / 3 已完成</span></div><div class="todo-list">
+<label class="todo-item"><input class="todo-check" type="checkbox" checked><span class="todo-label">整理本週工作重點</span><span class="status">已完成</span></label>
+<label class="todo-item"><input class="todo-check" type="checkbox"><span class="todo-label">回覆合作夥伴的信件</span><span class="status in-progress">進行中</span></label>
+<label class="todo-item"><input class="todo-check" type="checkbox"><span class="todo-label">下班後去超市採買</span><span class="status pending">尚未開始</span></label>
+</div></section></div>
+<aside class="side-column"><section class="card form-card" aria-labelledby="add-heading"><div class="section-heading" style="margin-bottom:14px"><h2 class="section-title" id="add-heading"><span class="heading-icon" aria-hidden="true">＋</span>新增行程</h2></div><p class="form-intro">有新的安排？把它記下來吧。</p>
+<form id="event-form"><div class="form-grid"><div class="field"><label for="event-name">行程名稱</label><input id="event-name" name="name" type="text" placeholder="例如：散步、讀一本書" required></div><div class="field"><label for="event-time">時間</label><input id="event-time" name="time" type="time" required></div><div class="field full"><label for="event-detail">備註</label><textarea id="event-detail" name="detail" placeholder="補充一些小細節（選填）"></textarea></div></div><button class="submit-button" type="submit">＋ 加入今日行程</button></form></section></aside></div>
+<footer class="footer">慢慢來，今天也值得好好過。 ✳</footer></main>
+
+
+<script>
+const dateElement=document.getElementById('today-date');
+const today=new Date();
+const localDate=new Date(today.getTime()-today.getTimezoneOffset()*60000).toISOString().slice(0,10);
+dateElement.dateTime=localDate;
+dateElement.textContent=new Intl.DateTimeFormat('zh-TW',{year:'numeric',month:'long',day:'numeric',weekday:'long'}).format(today);
+const schedule=document.getElementById('schedule-list');
+const eventCount=document.getElementById('event-count');
+const form=document.getElementById('event-form');
+const escapeHTML=value=>value.replace(/[&<>"']/g,character=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[character]));
+form.addEventListener('submit',event=>{
+ event.preventDefault();
+ const data=new FormData(form);
+ const name=escapeHTML(String(data.get('name')).trim());
+ const time=String(data.get('time'));
+ const detail=escapeHTML(String(data.get('detail')).trim());
+ if(!name||!time)return;
+ const article=document.createElement('article');
+ article.className='event';
+ article.innerHTML=`<time class="event-time" datetime="${time}">${time}</time><span class="event-dot" aria-hidden="true"></span><div><div class="event-name">${name}</div>${detail?`<div class="event-detail">${detail}</div>`:''}<span class="event-tag">新增</span></div>`;
+ const next=[...schedule.querySelectorAll('.event')].find(item=>item.querySelector('.event-time').textContent>time);
+ schedule.insertBefore(article,next||null);
+ eventCount.textContent=`${schedule.querySelectorAll('.event').length} 個安排`;
+ form.reset();
+ document.getElementById('event-name').focus();
+});
+const todoItems=[...document.querySelectorAll('.todo-item')];
+const todoCount=document.getElementById('todo-count');
+const updateTodos=()=>{
+ const completed=todoItems.filter(item=>item.querySelector('.todo-check').checked).length;
+ todoCount.textContent=`${completed} / ${todoItems.length} 已完成`;
+ todoItems.forEach(item=>{
+  const checkbox=item.querySelector('.todo-check');
+  item.classList.toggle('done',checkbox.checked);
+  const status=item.querySelector('.status');
+  if(checkbox.checked)status.textContent='已完成';
+  else if(status.textContent==='已完成')status.textContent='尚未開始';
+ });
+};
+todoItems.forEach(item=>item.querySelector('.todo-check').addEventListener('change',updateTodos));
+</script>
+</body>
+</html>
+
